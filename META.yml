@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: Alzabo-GUI-Mason
-version: 0.05
+version: 0.06
 license: perl
 distribution_type: module
 requires:
@@ -12,5 +12,5 @@ conflicts: {}
 provides:
   Alzabo::GUI::Mason:
     file: lib/Alzabo/GUI/Mason.pm
-    version: 0.05
+    version: 0.06
 generated_by: Module::Build version 0.20_02

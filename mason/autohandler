@@ -119,6 +119,9 @@
                schema => $s->name,
              },
   &>
+%     if ( $c[$x]->is_primary_key ) {
+- <b>pk</b>
+%     }
 %     if ( $x != $#c ) {
  <& href,
     text => '&raquo;',

@@ -87,15 +87,19 @@ sub _copy_dir
     opendir $dh, $from
 	or die "Can't read $from dir: $!\n";
 
+    my $ext = Alzabo::GUI::Mason::Config::mason_extension();
+
     my $count = 0;
     foreach my $from_f ( grep { ( ! /~\Z/ ) &&
                                 -f File::Spec->catfile( $from, $_ ) }
                          readdir $dh )
     {
+        my $to_f = File::Spec->catfile( $to, $from_f );
+        $to_f =~ s/\.mhtml$/$ext/;
+
         my $target =
-            $self->copy_if_modified( File::Spec->catfile( $from, $from_f ),
-                                     $to,
-                                     'flatten',
+            $self->copy_if_modified( from => File::Spec->catfile( $from, $from_f ),
+                                     to   => $to_f,
                                    );
 
         # was up to date

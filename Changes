@@ -1,3 +1,12 @@
+0.06    2003-10-06
+
+- Add "pk" after primary key colums in column list.
+
+- The installer was ignoring the user-provided extension, and simply
+giving all files the default ".mhtml" extension.  Reported by Barry
+Hoggard.
+
+
 0.05    2003-10-04
 
 - Renamed to Alzabo::GUI::Mason.

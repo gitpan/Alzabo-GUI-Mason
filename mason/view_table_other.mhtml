@@ -26,7 +26,7 @@
    <td align="center">
     <span class="text">
 %     foreach my $c_from ($fk->columns_from) {
-<& 'href', text => $c_from->name, path => 'view_column' . Alzabo::Config::mason_extension(), query => { schema => $t->schema->name, table => $t->name, column => $c_from->name } &>
+<& 'href', text => $c_from->name, path => 'view_column' . Alzabo::GUI::Mason::Config::mason_extension(), query => { schema => $t->schema->name, table => $t->name, column => $c_from->name } &>
 %         unless ($c_from->name eq ($fk->columns_from)[-1]->name) {
 <br />
 %     }
@@ -40,9 +40,9 @@
    <td align="center">
     <span class="text">
 %     foreach my $c_to ($fk->columns_to) {
-<& 'href', text => $fk->table_to->name, path => 'view_table' . Alzabo::Config::mason_extension(), query => { schema => $t->schema->name, table => $fk->table_to->name } &>
+<& 'href', text => $fk->table_to->name, path => 'view_table' . Alzabo::GUI::Mason::Config::mason_extension(), query => { schema => $t->schema->name, table => $fk->table_to->name } &>
  .
-<& 'href', text => $c_to->name, path => 'view_column' . Alzabo::Config::mason_extension(), query => { schema => $t->schema->name, table => $fk->table_to->name, column => $c_to->name } &>
+<& 'href', text => $c_to->name, path => 'view_column' . Alzabo::GUI::Mason::Config::mason_extension(), query => { schema => $t->schema->name, table => $fk->table_to->name, column => $c_to->name } &>
 %         unless ($c_to->name eq ($fk->columns_to)[-1]->name) {
 <br />
 %     }
@@ -50,7 +50,7 @@
     </span>
    </td>
    <td align="center">
-<form action="delete_foreign_key<% Alzabo::Config::mason_extension() %>">
+<form action="delete_foreign_key<% Alzabo::GUI::Mason::Config::mason_extension() %>">
  <input type="hidden" name="schema" value="<% $s->name %>">
  <input type="hidden" name="table_from" value="<% $fk->table_from->name %>">
  <input type="hidden" name="table_to" value="<% $fk->table_to->name %>">
@@ -79,7 +79,7 @@
 
  <h2>Create relationship</h2>
 
- <form action="add_relationship<% Alzabo::Config::mason_extension() %>" method="post">
+ <form action="add_relationship<% Alzabo::GUI::Mason::Config::mason_extension() %>" method="post">
  <input type="hidden" name="schema" value="<% $s->name %>">
  <input type="hidden" name="table_from" value="<% $t->name %>">
   <table width="100%" cellspacing="5">
@@ -119,7 +119,7 @@
 <& .index, $i &>
    </td>
    <td align="center">
-<form action="delete_index<% Alzabo::Config::mason_extension() %>">
+<form action="delete_index<% Alzabo::GUI::Mason::Config::mason_extension() %>">
  <input type="hidden" name="schema" value="<% $s->name %>">
  <input type="hidden" name="table" value="<% $t->name %>">
  <input type="hidden" name="index" value="<% $i->id %>">
@@ -137,7 +137,7 @@
 <div class="right">
  <h2>Add index</h2>
 
- <form action="add_index_1<% Alzabo::Config::mason_extension() %>" method="post">
+ <form action="add_index_1<% Alzabo::GUI::Mason::Config::mason_extension() %>" method="post">
  <input type="hidden" name="schema" value="<% $s->name %>">
  <input type="hidden" name="table" value="<% $t->name %>">
   <table width="100%" cellspacing="5">

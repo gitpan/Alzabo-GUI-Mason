@@ -1,5 +1,6 @@
 <%args>
 $schema
+$neato => 0
 </%args>
 <%once>
 use Alzabo::Create;
@@ -9,7 +10,12 @@ eval 'use GraphViz'; # optional feature
 <%init>
 my $s = Alzabo::Create::Schema->load_from_file( name => $schema );
 
-my $g = GraphViz->new( node => { shape => 'box' } );
+my $layout = $neato ? 'neato' : 'dot';
+my $g = GraphViz->new( node => { shape => 'box' },
+                       layout => $layout,
+                       directed => 1,
+                       no_overlap => 1,
+                     );
 
 foreach my $t ($s->tables)
 {

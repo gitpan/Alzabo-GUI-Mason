@@ -14,13 +14,18 @@ Also, as you may have noticed below, schemas without any foreign keys
 defined look very silly.
 </p>
 
-<img src="draw_graph<% Alzabo::GUI::Mason::Config::mason_extension() %>?schema=<% $s->name %>">
+<p>
+<a href="view_graph<% Alzabo::GUI::Mason::Config::mason_extension() %>?schema=<% $s->name %>&neato=<% $neato ? 0 : 1 %>">Alternate layout</a>
+</p>
+
+<img src="draw_graph<% Alzabo::GUI::Mason::Config::mason_extension() %>?schema=<% $s->name %>&neato=<% $neato %>">
 
 </div>
 
   </td>
 <%args>
 $s
+$neato => 0
 </%args>
 <%attr>
 show_tables => 0

@@ -1,3 +1,11 @@
+0.07    2003-10-08
+
+- Offer two styles of graph layout (neato & dot).
+
+- There were still a couple of spots using
+Alzabo::Config::mason_extension().  Reported by Barry Hoggard.
+
+
 0.06    2003-10-06
 
 - Add "pk" after primary key colums in column list.

@@ -35,7 +35,7 @@ sub ACTION_install_components
     {
 	warn <<'EOF';
 
-Finished installing mason based schema creation interface
+Finished installing mason based schema creation interface.
 
 EOF
     }

@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.35.
+signed via the Module::Signature module, version 0.38.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -15,31 +15,31 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 c39fbde7bb5dfe68c8eccf3e14e0ccf34f168113 Build.PL
-SHA1 b41ad141ca18150b296327927e4177c5febc3aa9 Changes
+SHA1 42d28d9b6875f1a8e90cb2a7ddbf651ae91aec5a Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
-SHA1 c500dab4ecab8be25e49690cd837d662ff235f80 MANIFEST
+SHA1 3470d4d621f27a1142fa6328247de8479f2907d0 MANIFEST
 SHA1 74e9e5659258e7f9aad6be3044fad4a840e23aca MANIFEST.SKIP
-SHA1 f24e1eec6adadcd4073ca82ca46e3833997e067c META.yml
+SHA1 d102723c478bd0d810e8d45da8d5c40c7ef79113 META.yml
 SHA1 1c3b245e8b8966b346d731f7e3a758f79fd2a77b Makefile.PL
 SHA1 884538e1ae5b294ace5ed946b678d3eb2df4bb06 README
 SHA1 6951f772986034ba086d62bca9954450adae1b50 inc/Alzabo/GUI/Mason/Build.pm
 SHA1 baf2cde1cb60821012481ce61ffdc425d5c42445 inc/Alzabo/GUI/Mason/Config.pm.tmpl
-SHA1 6ae04404878f7865e0d379629ff3bed72c57b601 lib/Alzabo/GUI/Mason.pm
-SHA1 4b4431814d7792c2227d767bb47948e5e4a815f1 mason/add_column.mhtml
+SHA1 443d0b59e0a5ee5dafdcf0316a6f9c2a149b26cb lib/Alzabo/GUI/Mason.pm
+SHA1 27f55d855135653e15bcfbf725446cb8354cd5c8 mason/add_column.mhtml
 SHA1 9ed7c6f85d96472abf5d7bd9b0c1574c5a47c4d4 mason/add_index_1.mhtml
-SHA1 670fc8410dea2edf0c7b356d7b021a72b28b5328 mason/add_index_2.mhtml
+SHA1 aff32d3b25adeced33208efe5f5bcabacc3eee64 mason/add_index_2.mhtml
 SHA1 0cef1b838e151e7392506b6d26eb505bdc4426aa mason/add_relationship.mhtml
-SHA1 8e4f4c09dbd2d43a15288ca0b3ebadd3fff68f55 mason/add_relationship_2.mhtml
-SHA1 5d8e4096f9b1b21599141a61af03a33d1518a22c mason/add_table.mhtml
+SHA1 e86e370c39eb745af59d119373e43fe874d39b5a mason/add_relationship_2.mhtml
+SHA1 688eed26f1ea7dfa72b8f1df198207b928db6ab1 mason/add_table.mhtml
 SHA1 d89afb8c9b4ca67e93ef3fcbe249f15a36acc212 mason/alzabo.css
 SHA1 5893ae903de30504cc8e6033cef80b1b91dbdd22 mason/autohandler
-SHA1 12a7850665533aae583b10532bc16006e3a7ce62 mason/change_column.mhtml
-SHA1 3e8e9e22175608b5634dd241afc3d202206f8113 mason/change_column_name.mhtml
+SHA1 d3b5072dd86e13454bdb532656bfa0f9c8350741 mason/change_column.mhtml
+SHA1 9cd6b585d99cacd4e428e71d23b6e657bf5923c1 mason/change_column_name.mhtml
 SHA1 77c7e8bbcaec5c5e1db1b370806a81086dff14f5 mason/change_schema_instantiation.mhtml
-SHA1 fb297f95deb5b4b52959e8aefbf01b09f0c586b8 mason/change_schema_name.mhtml
-SHA1 424c3a39ae42573adf920d03d95dc11ccb51cbb8 mason/change_table_attributes.mhtml
+SHA1 b95e0eb1616f37da8e0aad66764920d5e82ee5cf mason/change_schema_name.mhtml
+SHA1 50481d7abeebd7f4303f60790a4116f7174a4c29 mason/change_table_attributes.mhtml
 SHA1 a797379f5af9ed243b38f660778596c6b7f00d54 mason/change_table_comment.mhtml
-SHA1 0bcb66efb2b2072735fbd13a8ec7ea7af1f590ea mason/change_table_name.mhtml
+SHA1 89750068c47a0784515f2d098e0c04d85122e5d3 mason/change_table_name.mhtml
 SHA1 d3d0606c1d5e776ae6e329fe9c1ca4f99c81f443 mason/cube_logo.jpg
 SHA1 332bc99aad5ad01b5a91d7e4c13bb477cd07792a mason/delete_column.mhtml
 SHA1 bdf0aadd0fe6ecc9c7318eb64c1c09abe326ee93 mason/delete_foreign_key.mhtml
@@ -51,6 +51,7 @@ SHA1 e934806fcb345859a876e548eb35227a7940b2f0 mason/draw_graph.mhtml
 SHA1 f7efc118ad9d3cf52cd084d563916ed704b7ad09 mason/exception
 SHA1 8eff7355470d744b539f8558aeca8b5c67069b91 mason/execute_sql.mhtml
 SHA1 923c3e4ee11361872d152a79659d9673fad81e8a mason/execute_sync_sql.mhtml
+SHA1 a681fa988072433c10616a45226f7d0120981752 mason/handle_rules_exception
 SHA1 5b30a835088855e42a08a106c4d233ce1d7e3824 mason/href
 SHA1 024f14d545630f1f3f59a6821da251be00159924 mason/hyena.jpg
 SHA1 3ec446253be4f1d020b18d93ee61bfa96d2e3ed1 mason/index.mhtml
@@ -73,9 +74,9 @@ SHA1 82b8f8af2b9c83b711a5a2d7aa02087268f86753 mason/view_sync_sql.mhtml
 SHA1 741593d2972ae01d522de084617012c118c43792 mason/view_table.mhtml
 SHA1 b5dfa8e3fcaf26cc143e44ad51ea17ce93f2fbb5 mason/view_table_other.mhtml
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.2.3 (GNU/Linux)
+Version: GnuPG v1.2.4 (GNU/Linux)
 
-iD8DBQE/lA1l+4tbS/niBUoRAlNMAJ96k8S22bodPiNGtcMmV29m6uukrACeJQEl
-lMf1ee3wsA0i2mQEtk3xDzY=
-=nr5a
+iD8DBQFAM7Tw+4tbS/niBUoRAncbAKCYi6Fxpauhrj7e1nTiMGrfj2kthgCg5soD
+idXs62S3XXf4WALuzjFKcCc=
+=Iosg
 -----END PGP SIGNATURE-----

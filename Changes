@@ -1,3 +1,14 @@
+0.10
+
+- If an Alzabo::Exception::RDBMSRules exception is thrown, the full
+exception (with stack trace) is now output to STDERR.  This helps
+debugging in case the exception is due to an error in Alzabo, as
+opposed to user error.
+
+- Some submission handling components were redirecting to the wrong
+place after handling a RDBMSRules exception.
+
+
 0.09    2003-10-20
 
 - Fixes so that the GUI still works with pre 0.79_02 versions of

@@ -1,16 +1,15 @@
 --- #YAML:1.0
 name: Alzabo-GUI-Mason
-version: 0.09
+version: 0.1
+author:
+  - ~
+abstract: A GUI for Alzabo using Mason
 license: perl
-distribution_type: module
 requires:
   HTML::Mason: 0.896
   HTTP::BrowserDetect: 0
-recommends: {}
-build_requires: {}
-conflicts: {}
 provides:
   Alzabo::GUI::Mason:
     file: lib/Alzabo/GUI/Mason.pm
-    version: 0.09
-generated_by: Module::Build version 0.21
+    version: 0.1
+generated_by: Module::Build version 0.23

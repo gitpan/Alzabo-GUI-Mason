@@ -33,6 +33,7 @@ mason/draw_graph.mhtml
 mason/exception
 mason/execute_sql.mhtml
 mason/execute_sync_sql.mhtml
+mason/handle_rules_exception
 mason/href
 mason/hyena.jpg
 mason/index.mhtml

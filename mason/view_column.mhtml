@@ -62,14 +62,14 @@
 
  <input type="textfield" name="default" value="<% defined $c->default ? $c->default : '' | h %>" size="20">
 
- <h4>Change/add attributes:<br>
+ <h4>Change/add attributes/constraints:<br>
      (to delete an attribute simply erase it)</h4>
 
 % foreach my $a (sort $c->attributes) {
- <input type="textfield" name="attributes" value="<% $a %>" size="20"><br />
+ <input type="textfield" name="attributes" value="<% $a %>" size="40"><br />
 % }
- <input type="textfield" name="attributes" size="20"><br />
- <input type="textfield" name="attributes" size="20"><br />
+ <input type="textfield" name="attributes" size="40"><br />
+ <input type="textfield" name="attributes" size="40"><br />
 
  <table>
   <tr valign="top">

@@ -14,10 +14,19 @@
 
  <form action="add_table<% Alzabo::GUI::Mason::Config::mason_extension() %>" method="post">
   <input type="hidden" name="schema" value="<% $s->name %>">
+
   <h4>Table name:</h4>
   <input type="textfield" name="table_name" size="20"><br>
+
+% if ( Alzabo::Table->can('attributes') ) {
+  <h4>Attributes</h4>
+  <input type="textfield" name="attributes" size="20"><br />
+  <input type="textfield" name="attributes" size="20"><br />
+% }
+
   <h4>Comments:</h4>
   <textarea name="comment"></textarea>
+
 % if ($s->tables) {
   <h4>After table:</h4>
   <select name="after">

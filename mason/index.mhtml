@@ -2,11 +2,11 @@
 <div class="levelone">
  <h2>Existing Schemas</h2>
 
- <table class="schema-list">
+ <table width="100%" class="schema-list">
 %   foreach my $row (@rows) {
   <tr>
 %     foreach my $s (@$row) {
-   <td>
+   <td width="50%">
     <h3><& 'href', text => $s, path => 'view_schema' . Alzabo::GUI::Mason::Config::mason_extension(), query => { schema => $s } &></h3>
    </td>
 %     }

@@ -59,6 +59,22 @@
   </td>
  </tr>
 % }
+% if ( $s->rules->feature('functional_indexes') ) {
+ <tr>
+  <td colspan="2">
+   <p>
+   If you want to make a function index, simply type the function
+   below, with the proper column name arguments.  You should only use
+   the columns you selected on the previous page.
+   </p>
+  </td>
+ <tr>
+ <tr>
+  <td colspan="2">
+   <input type="text" name="function">
+  </td>
+ </tr>
+% }
  <tr>
   <td colspan="2">
    <input type="submit" value="Submit">
@@ -78,6 +94,6 @@ $t
 </%args>
 
 <%init>
-$m->comp( 'redirect', url => 'view_table' . Alzabo::GUI::Mason::Config::mason_extension() . '?schema=' . $s->name . '&table=' . $t->name )
+$m->comp( 'redirect', url => 'view_table_other' . Alzabo::GUI::Mason::Config::mason_extension() . '?schema=' . $s->name . '&table=' . $t->name )
     unless @columns;
 </%init>

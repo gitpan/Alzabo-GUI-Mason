@@ -9,23 +9,7 @@ To install the interface, run the following commands:
 
  ./Build install
 
-The installation process is interactive.
-
-To actually use this GUI you will need to set up your web server to
-use Mason.  See the Mason documentation for details.
-
-You'll want to make sure that JPEG files are not served by Mason in
-whatever directory you install the data modelling tool.  For Apache,
-you can use a configure something like this:
-
-  <Location /alzabo>
-    SetHandler  perl-script
-    PerlHandler HTML::Mason::ApacheHandler
-  </Location>
-
-  <LocationMatch "/alzabo/.*\.jpg$">
-    SetHandler  default
-  </Location>
+For more details see the Alzabo::GUI::Mason module documentation.
 
 
 COPYRIGHT

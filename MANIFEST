@@ -19,6 +19,7 @@ mason/change_column.mhtml
 mason/change_column_name.mhtml
 mason/change_schema_instantiation.mhtml
 mason/change_schema_name.mhtml
+mason/change_table_attributes.mhtml
 mason/change_table_comment.mhtml
 mason/change_table_name.mhtml
 mason/cube_logo.jpg

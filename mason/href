@@ -4,7 +4,7 @@
 % } else {
 <% $text %>\
 % }
-</a>
+</a>\
 <%args>
 $text
 $escape => 1

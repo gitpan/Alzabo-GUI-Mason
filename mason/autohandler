@@ -40,7 +40,7 @@
 %   for ( my $x = 0; $x < @t; $x++ ) {
  <h3>\
 %     if ($x) {
- <& href,
+<& href,
     text => '&laquo;',
     escape => 0,
     path => 'move_table' . Alzabo::GUI::Mason::Config::mason_extension(),
@@ -48,27 +48,29 @@
                before => $t[$x - 1]->name,
                schema => $s->name,
              },
-  &>
+ &>\
 %     } else {
- <span class="left_invisible">&laquo;</span>
+<span class="left_invisible">&laquo;</span>\
 %     }
- <& href,
-    text => $t[$x]->name,
-    path => 'view_table' . Alzabo::GUI::Mason::Config::mason_extension(),
-    query => { table => $t[$x]->name,
-               schema => $s->name,
-             },
-  &>
+&nbsp;\
+<& href,
+   text => $t[$x]->name,
+   path => 'view_table' . Alzabo::GUI::Mason::Config::mason_extension(),
+   query => { table => $t[$x]->name,
+              schema => $s->name,
+            },
+ &>\
+&nbsp;\
 %     if ( $x != $#t ) {
- <& href,
-    text => '&raquo;',
-    escape => 0,
-    path => 'move_table' . Alzabo::GUI::Mason::Config::mason_extension(),
-    query => { table => $t[$x]->name,
-               after => $t[$x + 1]->name,
-               schema => $s->name,
-             },
-  &>\
+<& href,
+   text => '&raquo;',
+   escape => 0,
+   path => 'move_table' . Alzabo::GUI::Mason::Config::mason_extension(),
+   query => { table => $t[$x]->name,
+              after => $t[$x + 1]->name,
+              schema => $s->name,
+            },
+ &>\
 %     }
 </h3>
 %   }
@@ -86,7 +88,7 @@
 <div class="middle">
  <p>
  <& href,
-    text => 'Foreign keys & indexes',
+    text => 'jump to foreign keys/indexes',
     path => 'view_table_other' . Alzabo::GUI::Mason::Config::mason_extension(),
     query => { table => $t->name,
                schema => $s->name,
@@ -98,19 +100,20 @@
 %   for ( my $x = 0; $x < @c; $x++ ) {
 <h3>\
 %     if ($x) {
- <& href,
-    text => '&laquo;',
-    escape => 0,
-    path => 'move_column' . Alzabo::GUI::Mason::Config::mason_extension(),
-    query => { column => $c[$x]->name,
-               before => $c[$x - 1]->name,
-               table  => $c[$x]->table->name,
-               schema => $s->name,
-             },
-  &>
+<& href,
+   text => '&laquo;',
+   escape => 0,
+   path => 'move_column' . Alzabo::GUI::Mason::Config::mason_extension(),
+   query => { column => $c[$x]->name,
+              before => $c[$x - 1]->name,
+              table  => $c[$x]->table->name,
+              schema => $s->name,
+            },
+ &>\
 %     } else {
- <span class="middle_invisible">&laquo;</span>
+<span class="middle_invisible">&laquo;</span>\
 %     }
+&nbsp;\
  <& href,
     text => $c[$x]->name,
     path => 'view_column' . Alzabo::GUI::Mason::Config::mason_extension(),
@@ -118,20 +121,21 @@
                table  => $c[$x]->table->name,
                schema => $s->name,
              },
-  &>
+  &>\
 %     if ( $c[$x]->is_primary_key ) {
-- <b>pk</b>
+&nbsp;-&nbsp;<b>pk</b>\
 %     }
+&nbsp;\
 %     if ( $x != $#c ) {
- <& href,
-    text => '&raquo;',
-    escape => 0,
-    path => 'move_column' . Alzabo::GUI::Mason::Config::mason_extension(),
-    query => { column => $c[$x]->name,
-               after  => $c[$x + 1]->name,
-               table  => $c[$x]->table->name,
-               schema => $s->name,
-             },
+<& href,
+   text => '&raquo;',
+   escape => 0,
+   path => 'move_column' . Alzabo::GUI::Mason::Config::mason_extension(),
+   query => { column => $c[$x]->name,
+              after  => $c[$x + 1]->name,
+              table  => $c[$x]->table->name,
+              schema => $s->name,
+            },
   &>\
 %     }
 </h3>

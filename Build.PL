@@ -55,6 +55,9 @@ Where would you like to install the mason components for this
 interface (this must be under your component root)?  NOTE: The
 installer will create an 'alzabo' subdirectory under the directory
 given.
+
+If you are not familiar with Mason, any directory underneath your web
+server's document root will work.
 EOF
 
 	$config->{mason_web_dir} =

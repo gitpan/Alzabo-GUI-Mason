@@ -1,6 +1,7 @@
 <%args>
 $schema
 $table_name
+@attributes => ()
 $comment => ''
 $after => undef
 </%args>
@@ -14,6 +15,10 @@ eval
     my %p = ( name => $table_name,
 	      comment => $comment,
 	    );
+
+    $p{attributes} = \@attributes
+        if Alzabo::Table->can('attributes');
+
     $p{after} = $s->table( $after ) if defined $after;
 
     $s->make_table(%p);

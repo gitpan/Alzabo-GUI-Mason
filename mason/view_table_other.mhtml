@@ -3,7 +3,7 @@
 <div class="middle">
  <p>
  <& href,
-    text => 'Columns',
+    text => 'jump to columns',
     path => 'view_table' . Alzabo::GUI::Mason::Config::mason_extension(),
     query => { table => $t->name,
                schema => $s->name,
@@ -175,6 +175,9 @@ my $last = $columns[-1];
 
 <%def .index>
 <span class="text">
+% if ( $i->function ) {
+<% $i->function | h %> -
+% }
 <% join ', ', @c %>
 % if ($i->unique) {
  - <b>unique</b>

@@ -3,6 +3,7 @@ $schema
 $table
 $unique => 0
 $fulltext => 0
+$function => ''
 @columns
 @prefixes => ()
 </%args>
@@ -21,9 +22,12 @@ eval
 
     @cols = sort { $ARGS{ $a->{column}->name . '_order' } <=> $ARGS{ $b->{column}->name . '_order' } } @cols;
 
+    undef $function unless length $function;
+
     $t->make_index( columns => \@cols,
 		    unique => $unique,
 		    fulltext => $fulltext,
+                    function => $function,
 		  );
 
     $s->save_to_file;

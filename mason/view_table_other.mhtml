@@ -175,7 +175,7 @@ my $last = $columns[-1];
 
 <%def .index>
 <span class="text">
-% if ( $i->function ) {
+% if ( $i->can('function') && $i->function ) {
 <% $i->function | h %> -
 % }
 <% join ', ', @c %>

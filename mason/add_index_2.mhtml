@@ -27,7 +27,7 @@ eval
     $t->make_index( columns => \@cols,
 		    unique => $unique,
 		    fulltext => $fulltext,
-                    function => $function,
+                    Alzabo::Index->can('function') ? ( function => $function ) : (),
 		  );
 
     $s->save_to_file;

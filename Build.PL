@@ -18,6 +18,7 @@ my $build =
                                     requires  => { 'HTML::Mason' => 0.896,
                                                    'HTTP::BrowserDetect' => 0,
                                                  },
+                                    sign => 1,
                                   );
 
 $build->create_build_script;

@@ -56,3 +56,5 @@ mason/view_table.mhtml
 mason/view_table_other.mhtml
 META.yml
 README
+
+SIGNATURE    Added here by Module::Build

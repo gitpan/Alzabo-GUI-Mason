@@ -35,7 +35,7 @@
    Is dependent on <% $t_to->name %>?
    <input type="checkbox" name="from_is_dependent" value="1" <% $from_is_dependent && 'checked' %>>
   </td>
-  <td>
+  <td nowrap="1">
    <select name="cardinality_from">
 % foreach my $cf (@cardinality) {
     <option value="<% $cf   %>"<% $cardinality_from eq $cf && ' selected' %>><% $cf %></option>

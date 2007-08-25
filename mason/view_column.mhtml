@@ -35,7 +35,7 @@
 
  <h4>Change comment:</h4>
 
- <textarea name="comment"><% $c->comment | h %></textarea>
+ <textarea rows="5" cols="40" name="comment"><% $c->comment | h %></textarea>
 
  <h4>Change type:</h4>
 
@@ -60,13 +60,13 @@
 
  <h4>Change default:</h4>
 
- <input type="textfield" name="default" value="<% defined $c->default ? $c->default : '' | h %>" size="20">
+ <input type="textfield" name="default" value="<% Alzabo::GUI::Mason::default_for_web( $c->default ) | h %>" size="20">
 
  <h4>Change/add attributes/constraints:<br>
      (to delete an attribute simply erase it)</h4>
 
 % foreach my $a (sort $c->attributes) {
- <input type="textfield" name="attributes" value="<% $a %>" size="40"><br />
+ <input type="textfield" name="attributes" value="<% $a | h %>" size="40"><br />
 % }
  <input type="textfield" name="attributes" size="40"><br />
  <input type="textfield" name="attributes" size="40"><br />
@@ -134,6 +134,8 @@ $t
 $c
 </%args>
 <%init>
+use Alzabo::GUI::Mason;
+
 my $is_extended_type =
       ( $s->rules->feature('extended_column_types')
 	&& ! grep { $c->type eq $_ } $s->rules->column_types

@@ -38,11 +38,9 @@ mason/href
 mason/hyena.jpg
 mason/index.mhtml
 mason/login_form.mas
-mason/make_url
 mason/move_column.mhtml
 mason/move_table.mhtml
 mason/new_schema.mhtml
-mason/redirect
 mason/reverse_engineer.mhtml
 mason/schema_menubar
 mason/syshandler
@@ -57,5 +55,4 @@ mason/view_table.mhtml
 mason/view_table_other.mhtml
 META.yml
 README
-
 SIGNATURE    Added here by Module::Build

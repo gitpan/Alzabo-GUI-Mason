@@ -1,4 +1,4 @@
-<a href="<& url, %ARGS &>">\
+<a href="<% $uri %>">\
 % if ($escape) {
 <% $ARGS{text} | h %>\
 % } else {
@@ -9,3 +9,11 @@
 $text
 $escape => 1
 </%args>
+
+<%init>
+my %args = %ARGS;
+delete $args{text};
+delete $args{escape};
+
+my $uri = uri(%args);
+</%init>

@@ -99,7 +99,7 @@
   <input type="hidden" name="instantiated" value="1">
   <input type="submit" value="Mark schema as instantiated">
 % }
-  <br>
+  <br />
   <p>
   <b>Note:</b> This action only changes the schema object's internal
   state.  It will not actually remove the schema from the backend

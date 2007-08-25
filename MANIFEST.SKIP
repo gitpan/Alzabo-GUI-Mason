@@ -1,5 +1,5 @@
 .*CVS.*
-lib/AlzaboGUI/Mason/Config.pm
+lib/Alzabo/GUI/Mason/Config.pm
 ^Makefile$
 \.\#.*
 ~$
@@ -10,3 +10,4 @@ lib/AlzaboGUI/Mason/Config.pm
 .*blib.*
 test-httpd.conf
 ^static-html
+.*\.svn.*

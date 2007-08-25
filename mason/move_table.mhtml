@@ -21,12 +21,11 @@ my $e = $@;
 
 $m->comp( 'exception', $e ) if $e;
 
-my $url = $m->comp( 'make_url',
-		    path => 'view_table' . Alzabo::GUI::Mason::Config::mason_extension(),
-		    query => { schema => $s->name,
-			       table  => $table }
-		  );
-$m->comp( 'redirect', url => $url );
+$m->redirect( uri( path => 'view_table' . Alzabo::GUI::Mason::Config::mason_extension(),
+                   query => { schema => $s->name,
+                              table  => $table },
+                 ),
+            );
 
 </%init>
 

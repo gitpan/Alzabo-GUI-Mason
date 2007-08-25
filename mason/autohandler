@@ -145,7 +145,7 @@
   </td>
 % }
 
-<& $m->fetch_next, %args, %ARGS &>
+% $m->call_next( %args, %ARGS );
 
  </tr>
 </table>

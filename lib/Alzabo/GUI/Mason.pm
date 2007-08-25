@@ -4,7 +4,26 @@ use strict;
 
 use vars qw($VERSION);
 
-$VERSION = 0.10;
+$VERSION = 0.11;
+
+sub default_for_web {
+    my $default = shift;
+
+    return '' unless defined $default;
+    return "''" if defined $default && ! length $default;
+
+    return $default;
+}
+
+sub default_from_web {
+    my $default = shift;
+
+    return undef if $default eq '';
+    return '' if $default eq "''";
+
+    return $default;
+}
+
 
 1;
 

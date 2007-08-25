@@ -17,6 +17,8 @@ $after => undef
 </%args>
 
 <%init>
+use Alzabo::GUI::Mason;
+
 my ($s, $t);
 eval
 {
@@ -26,7 +28,7 @@ eval
 
     $length = undef if $length eq '';
     $precision = undef if $precision eq '';
-    $default = undef if $default eq '';
+    $default = Alzabo::GUI::Mason::default_from_web( $default );
 
     my %p = ( name => $column_name,
 	      nullable => $nullable,
@@ -57,11 +59,12 @@ $m->comp( 'handle_rules_exception', e => $e, comp => 'view_table', %ARGS );
 
 $m->comp( 'exception', $e ) if $e;
 
-$m->comp( 'redirect',
-          url => $m->comp( 'make_url',
-			   path => 'view_table' . Alzabo::GUI::Mason::Config::mason_extension(),
-			   query => { schema => $s->name,
-				      table => $t->name } ) );
+$m->redirect( uri( path => 'view_table' . Alzabo::GUI::Mason::Config::mason_extension(),
+                   query => { schema => $s->name,
+                              table => $t->name },
+                 ),
+            );
+
 </%init>
 
 <%flags>

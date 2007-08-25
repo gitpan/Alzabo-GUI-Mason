@@ -39,7 +39,13 @@ $m->comp( 'handle_rules_exception', e => $e, comp => 'add_index_1', %ARGS );
 
 $m->comp( 'exception', $e ) if $e;
 
-$m->comp( 'redirect', url => 'view_table_other' . Alzabo::GUI::Mason::Config::mason_extension() . '?schema=' . $s->name . '&table=' . $t->name );
+$m->redirect( uri( path => 'view_table_other' . Alzabo::GUI::Mason::Config::mason_extension(),
+                   query => { schema => $s->name,
+                              table  => $t->name,
+                            },
+                 ),
+            );
+
 </%init>
 
 <%flags>

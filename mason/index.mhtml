@@ -114,7 +114,7 @@ if ( @s > 10 )
 {
     my @c1 = splice @s, 0, int( @s / 2 );
     # first column should be larger if count is odd
-    push @c1, shift @s if @s % 1;
+    push @c1, shift @s if @s > @c1;
     my @c2 = @s;
 
     while (@c1)

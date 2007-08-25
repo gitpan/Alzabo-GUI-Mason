@@ -10,9 +10,9 @@ if ( $e && UNIVERSAL::isa( $e, 'Alzabo::Exception::RDBMSRules' ) )
 {
     warn $e;
 
-    $m->comp( 'redirect',
-	      url => $m->comp( 'make_url',
-			       path => $comp . Alzabo::GUI::Mason::Config::mason_extension(),
-			       query => { errors => $e->error, %ARGS } ) );
+    $m->redirect( uri( path => $comp . Alzabo::GUI::Mason::Config::mason_extension(),
+                       query => { errors => $e->error, %ARGS },
+                     ),
+                );
 }
 </%init>

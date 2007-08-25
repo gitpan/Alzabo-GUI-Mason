@@ -1,4 +1,4 @@
 <%init>
-my $url = $m->comp( 'make_url', %ARGS );
+my $url = uri( %ARGS );
 </%init>
 <% $url %>

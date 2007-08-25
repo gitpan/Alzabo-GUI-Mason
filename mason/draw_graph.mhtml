@@ -4,7 +4,6 @@ $neato => 0
 </%args>
 <%once>
 use Alzabo::Create;
-use HTTP::BrowserDetect;
 eval 'use GraphViz'; # optional feature
 </%once>
 <%init>
@@ -73,22 +72,21 @@ foreach my $t ($s->tables)
     }
 }
 
-my $browser = HTTP::BrowserDetect->new( $ENV{USER_AGENT} );
-my $method;
-if ( $browser->major > 4 )
+if ( my $r = $m->apache_req )
 {
     $r->content_type('image/png');
-    $method = 'as_png';
 }
 else
 {
-    $r->content_type('image/jpeg');
-    $method = 'as_jpeg';
+    my $cat = eval "$c";
+    die $@ if $@;
+
+    $cat->response()->content_type('image/png');
 }
 
 $m->clear_buffer; # no extra whitespace or anything
 $m->flush_buffer;
-$g->$method( sub { $m->out(@_); $m->flush_buffer; } );
+$g->as_png( sub { $m->out(@_); $m->flush_buffer; } );
 $m->abort(200); # make sure nothing extra sneaks out
 </%init>
 <%flags>

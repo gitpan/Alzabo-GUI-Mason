@@ -15,16 +15,16 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 eba2b1ab1b5271c392a76c77954e6cd5db2c7d48 Build.PL
-SHA1 7ef50f8e394e6dca5fcac79ec750fcbf2509b5d7 Changes
+SHA1 b75cf1875b0f4f6973a74aa37360d2465e429a13 Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
 SHA1 7f1c3a23f6d73811b6938e1c4f93a463052feb29 MANIFEST
 SHA1 a2f00e5d2f648250c0c6c5511db5cd6d28283cc3 MANIFEST.SKIP
-SHA1 60ab40db5660aac1b88641f1fa19236a25612eb4 META.yml
+SHA1 8059d8acc1cd4cb8434ba8190c45cbf4f41e1228 META.yml
 SHA1 1c3b245e8b8966b346d731f7e3a758f79fd2a77b Makefile.PL
 SHA1 884538e1ae5b294ace5ed946b678d3eb2df4bb06 README
 SHA1 6951f772986034ba086d62bca9954450adae1b50 inc/Alzabo/GUI/Mason/Build.pm
 SHA1 baf2cde1cb60821012481ce61ffdc425d5c42445 inc/Alzabo/GUI/Mason/Config.pm.tmpl
-SHA1 372205c653d0f55abf7058aba9f3d8a9c104691a lib/Alzabo/GUI/Mason.pm
+SHA1 313c9ee2b1be08d8b0e428381a72ec1fa44a3ce2 lib/Alzabo/GUI/Mason.pm
 SHA1 3cf891156b89daa5cb0e7f485bb34f9b96363002 mason/add_column.mhtml
 SHA1 0f89fd887ab3f9248c88fe760e32ebe76e4480c2 mason/add_index_1.mhtml
 SHA1 93692ef68e479ee86d79808d03bc8a2870f749ba mason/add_index_2.mhtml
@@ -44,9 +44,9 @@ SHA1 d3d0606c1d5e776ae6e329fe9c1ca4f99c81f443 mason/cube_logo.jpg
 SHA1 5c60e3ccca219cea330c77f61560997352d068c0 mason/delete_column.mhtml
 SHA1 0e6e4e5f2f45fc3b6c06e323ece2cfeef2fd871c mason/delete_foreign_key.mhtml
 SHA1 5a57bb43601da789dd0a42b1113495afc801a3da mason/delete_index.mhtml
-SHA1 c66ef75bb1882b8c26bcd697e72f05b3e2665464 mason/delete_schema.mhtml
+SHA1 4a5270c40ea7d5aa2e2393f0c81c7a6c3f9bdf29 mason/delete_schema.mhtml
 SHA1 b3b3c01da384394d1bd34aedbb3220a5cd4650dd mason/delete_schema_confirm.mhtml
-SHA1 e7df91b7cae304d2d7dc4d80704c956368ef0a4d mason/delete_table.mhtml
+SHA1 b7eaaf7dc8caeaa924ab168247ac8f7b93740ab5 mason/delete_table.mhtml
 SHA1 e006c48ddad586ccbbb0df057f1d7ccab2b29b2c mason/draw_graph.mhtml
 SHA1 f7efc118ad9d3cf52cd084d563916ed704b7ad09 mason/exception
 SHA1 8eff7355470d744b539f8558aeca8b5c67069b91 mason/execute_sql.mhtml
@@ -74,7 +74,7 @@ SHA1 b5dfa8e3fcaf26cc143e44ad51ea17ce93f2fbb5 mason/view_table_other.mhtml
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.6 (GNU/Linux)
 
-iD8DBQFG0GXR3Or3ZzQuifMRAhTUAKDiC7aTBxHSj7WrWzZn4AeOOJ8CjgCeJR4w
-QpbSjPhOtGG60wXiPwOk/5c=
-=P+sH
+iD8DBQFG4st03Or3ZzQuifMRAu7pAKDEXaeEYAZX6FWRLNwp6uq97GWFrACg71dc
+KoXb9foDsKoK6MyYrXFRxyY=
+=WM58
 -----END PGP SIGNATURE-----

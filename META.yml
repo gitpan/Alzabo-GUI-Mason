@@ -1,6 +1,6 @@
 ---
 name: Alzabo-GUI-Mason
-version: 0.11
+version: 0.12
 author:
   - 'Dave Rolsky <autarch@urth.org>'
 abstract: A GUI for Alzabo using Mason
@@ -13,7 +13,7 @@ requires:
 provides:
   Alzabo::GUI::Mason:
     file: lib/Alzabo/GUI/Mason.pm
-    version: 0.11
+    version: 0.12
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

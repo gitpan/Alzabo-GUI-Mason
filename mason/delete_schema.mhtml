@@ -15,7 +15,7 @@ my $e = $@;
 
 $m->comp( 'exception', $e ) if $e;
 
-$m->comp( 'redirect', url => 'index' . Alzabo::GUI::Mason::Config::mason_extension() );
+$m->redirect( uri( path => 'index . Alzabo::GUI::Mason::Config::mason_extension() ) );
 
 </%init>
 

@@ -4,7 +4,7 @@ use strict;
 
 use vars qw($VERSION);
 
-$VERSION = 0.12;
+$VERSION = 0.1201;
 
 sub default_for_web {
     my $default = shift;
